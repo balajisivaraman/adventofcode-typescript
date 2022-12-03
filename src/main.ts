@@ -1,5 +1,5 @@
 import { day01a, day01b } from "./day01";
-import { day02a } from "./day02";
+import { day02a, day02b } from "./day02";
 import { parseElfCalories, parseInputAsStrings } from "./utils";
 
 const args = process.argv;
@@ -14,5 +14,6 @@ switch (day) {
     break;
   case 'day02':
     console.log("Day 02, Part 1: ", day02a(parseInputAsStrings(fileName)));
+    console.log("Day 02, Part 2: ", day02b(parseInputAsStrings(fileName)));
     break;
 }
