@@ -7,3 +7,6 @@ export function parseElfCalories(fileName: string): Array<Array<number>> {
     .map((l) => l.split("\n").map((calorie) => parseInt(calorie)).filter((n) => !isNaN(n)));
 }
 
+export function parseInputAsStrings(fileName: string): string[] {
+  return fs.readFileSync(fileName, 'utf-8').split("\n").filter((l) => l != '');
+}
